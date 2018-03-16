@@ -1,7 +1,7 @@
 function cariMedian(arr) {
   var middle = Math.floor((arr.length-1)/2);
   
-  for (i=0; i < arr.length; i++) {
+  for (var i=0; i < arr.length; i++) {
     if (arr.length % 2 !== 0) {
       return arr[middle];
     } else if (arr.length % 2 === 0) {
