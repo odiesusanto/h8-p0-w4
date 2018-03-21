@@ -7,11 +7,15 @@ function changeMe(arr) {
     obj.gender = arr[i][2];
     if (arr[i][3]) {
       obj.age = 2018 - arr[i][3];
-    } else {
+    } else if (arr[i][3] == undefined || arr[i][3] > 2018) {
       obj.age = "Invalid Birth Year";
     }
     console.log(obj);
   }
+  if(arr.length === 0) {
+    console.log('""');
+  }
 }
 
 changeMe([['Christ', 'Evans', 'Male', 1982], ['Robert', 'Downey', 'Male']]);
+changeMe([]); 
