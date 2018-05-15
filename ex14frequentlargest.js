@@ -14,7 +14,7 @@ function sorting(arrNumber) {
   
   function getTotal(arrNumber) {
     if (arrNumber.length === 0) {
-        return '';
+        return "''";
     }
     var max = 0;
     var countMax = 0;
